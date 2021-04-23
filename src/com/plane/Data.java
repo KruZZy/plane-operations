@@ -12,8 +12,10 @@ public class Data {
     public static ArrayList<Point> getPointArray() {
         return points;
     }
+    public static Point getPointAtPos(int id) { return points.get(id-1); }
 
     public static void removePoint(int id) {
         points.remove(id-1);
     }
+
 }
