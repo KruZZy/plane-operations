@@ -3,6 +3,7 @@ package com.plane;
 
 public class Main {
     public static void main(String[] args) {
+        Data.initFiles();
         System.out.print("Welcome! Choose an operation:");
         for(String name : Operations.names) System.out.println(name);
 

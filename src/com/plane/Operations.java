@@ -18,7 +18,7 @@ public class Operations {
             "1. Add a new point",
             "2. Remove a point (by ID. use 3.)",
             "3. List points",
-            "4. Get distance between poitns (by IDs. use 3.)"
+            "4. Get distance between points (by IDs. use 3.)"
     };
 
     static Scanner kbScan = new Scanner(System.in);
@@ -39,8 +39,8 @@ public class Operations {
         x = kbScan.nextDouble();
         System.out.print("Give y coordinate: ");
         y = kbScan.nextDouble();
-
-        Data.addPoint(x, y);
+        Point A = new Point(x, y);
+        Data.savePoint(x, y);
         return 1;
     }
 
