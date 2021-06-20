@@ -28,7 +28,7 @@ public class Data {
         int counter = 0;
         for (String ln : lines) {
             String[] arr = ln.split(",", 2);
-            addPoint(Float.parseFloat(arr[0]), Float.parseFloat(arr[1]));
+            addPoint(Double.parseDouble(arr[0]), Double.parseDouble(arr[1]));
             counter++;
         }
         System.out.println("Loaded " + counter + " points.");
